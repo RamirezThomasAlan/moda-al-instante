@@ -3,127 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda al instante</title>
+    <title>Moda al Instante - Tienda de Ropa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <!-- Logo -->
-            <div class="nav-logo">
-                <a href="#inicio">
-                    <span class="logo-text">MI MARCA</span>
-                </a>
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-tshirt"></i>
+                Moda al Instante
             </div>
-
-            <!-- Menú principal -->
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#inicio" class="nav-link">
-                        <span class="link-icon">🏠</span>
-                        <span class="link-text">Inicio</span>
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#servicios" class="nav-link">
-                        <span class="link-icon">⚙️</span>
-                        <span class="link-text">Servicios</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#servicio1">Servicio 1</a></li>
-                        <li><a href="#servicio2">Servicio 2</a></li>
-                        <li><a href="#servicio3">Servicio 3</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#productos" class="nav-link">
-                        <span class="link-icon">📦</span>
-                        <span class="link-text">Productos</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#producto1">Producto 1</a></li>
-                        <li><a href="#producto2">Producto 2</a></li>
-                        <li><a href="#producto3">Producto 3</a></li>
-                        <li><a href="#producto4">Producto 4</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#nosotros" class="nav-link">
-                        <span class="link-icon">👥</span>
-                        <span class="link-text">Nosotros</span>
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#contacto" class="nav-link">
-                        <span class="link-icon">📞</span>
-                        <span class="link-text">Contacto</span>
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Elementos del lado derecho -->
-            <div class="nav-actions">
-                <!-- Buscador -->
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Buscar...">
-                    <button class="search-btn">
-                        <span class="search-icon">🔍</span>
-                    </button>
-                </div>
-
-                <!-- Botón CTA -->
-                <a href="#cta" class="cta-button">
-                    <span class="cta-text">¡Acción Principal!</span>
-                </a>
-
-                <!-- Menú móvil -->
-                <div class="mobile-menu-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Secciones placeholder -->
-    <section id="inicio">
-        <h1>Sección Inicio</h1>
-        <p>Contenido de la sección inicio aquí...</p>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Moda al Instante</h1>
+            <p>Descubre las últimas tendencias en moda con envío rápido y seguro. Estilo, calidad y comodidad en un solo lugar.</p>
+            <a href="#productos" class="cta-button">Explorar Colección</a>
+        </div>
     </section>
 
-    <section id="servicios">
-        <h1>Sección Servicios</h1>
-        <p>Contenido de la sección servicios aquí...</p>
-    </section>
-
+    <!-- Productos Destacados -->
     <section id="productos">
-        <h1>Sección Productos</h1>
-        <p>Contenido de la sección productos aquí...</p>
+        <div class="section-title">
+            <h2>Productos Destacados</h2>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Los productos se cargan dinámicamente con JavaScript -->
+        </div>
     </section>
 
-    <section id="nosotros">
-        <h1>Sección Nosotros</h1>
-        <p>Contenido de la sección nosotros aquí...</p>
+    <!-- Categorías -->
+    <section class="categories" id="categorias">
+        <div class="section-title">
+            <h2>Categorías</h2>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Ropa de Mujer">
+                <div class="category-overlay">
+                    <h3 class="category-title">Ropa de Mujer</h3>
+                    <p>Vestidos, blusas y más</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ropa de Hombre">
+                <div class="category-overlay">
+                    <h3 class="category-title">Ropa de Hombre</h3>
+                    <p>Camisas, pantalones y más</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1558769132-cb25c5d1d1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Accesorios">
+                <div class="category-overlay">
+                    <h3 class="category-title">Accesorios</h3>
+                    <p>Bolsos, joyas y más</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contacto">
-        <h1>Sección Contacto</h1>
-        <p>Contenido de la sección contacto aquí...</p>
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <div class="section-title">
+            <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonials-container" id="testimonialsContainer">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">La calidad de la ropa superó mis expectativas. El envío fue rápido y el producto llegó en perfectas condiciones. Definitivamente volveré a comprar.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="María González">
+                            </div>
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Excelente servicio al cliente. Tuve un problema con mi pedido y lo resolvieron inmediatamente. La ropa es de muy buena calidad y los precios son justos.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Carlos López">
+                            </div>
+                            <div class="author-info">
+                                <h4>Carlos López</h4>
+                                <p>Cliente desde 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Me encanta la variedad de estilos que ofrecen. Siempre encuentro algo que se adapta a mi personalidad. La entrega es rápida y la calidad excelente.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Martínez">
+                            </div>
+                            <div class="author-info">
+                                <h4>Ana Martínez</h4>
+                                <p>Cliente desde 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" id="prevTestimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn" id="nextTestimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
     </section>
 
-    <section id="cta">
-        <h1>Sección Call to Action</h1>
-        <p>Contenido de la sección CTA aquí...</p>
-    </section>
-    <h1>Moda al instante</h1>
-        
-    <link rel="stylesheet" href="./js/script.js">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Moda al Instante</h3>
+                <p>Tu destino para la moda más actual con la mejor calidad y servicio. Envíos a todo el país.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-reddit-alien"></i></a>
+                    <a href="#"><i class="fab fa-fiverr"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Política de Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 742, Buenos Aires</li>
+                    <li><i class="fas fa-phone"></i> +54 11 7361-9142</li>
+                    <li><i class="fas fa-envelope"></i> info@modaalinstante.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Moda al Instante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        <p>Proyecto ficticio desarrollado por Thomas Ramírez - Desarrollador Web con más de 2 años de experiencia, especializado en Landing Pages Profesionales, SEO y Marketing Digital.</p>
+        <p>Esta página fue creada con fines demostrativos, utilizando HTML, CSS y JavaScript puro. No pertenece a ninguna empresa real.</p>
+        <p>Si querés una landing igual de profesional, encargá la tuya por solo $5 USD en mi perfil de <a href="#">Fiverr</a>.</p>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/541173619142?text=Queres%20una%20pagina%20como%20esta?" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal de Producto -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Producto">
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" id="decreaseQuantity">-</button>
+                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1">
+                            <button class="quantity-btn" id="increaseQuantity">+</button>
+                        </div>
+                        <button class="add-to-cart" id="addToCartModal">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito lateral -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Los productos del carrito se cargan dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
