@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Vestido Floral Veraniego",
-        price: 4590,
+        price: 45,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Elegante vestido floral perfecto para el verano. Confeccionado en tela suave y transpirable, ideal para días calurosos. Disponible en varios colores y talles."
@@ -11,87 +11,87 @@ const products = [
     {
         id: 2,
         name: "Jeans Slim Fit",
-        price: 6290,
+        price: 62,
         category: "hombre",
         image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Jeans de corte slim fit, cómodos y resistentes. Hechos con denim de alta calidad que se adapta a tu cuerpo con el uso. Disponible en varios lavados."
     },
     {
         id: 3,
-        name: "Blazer Elegante",
-        price: 8990,
+        name: "Campera Elegante",
+        price: 89,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Blazer sofisticado perfecto para ocasiones formales o para darle un toque elegante a tu look casual. Confeccionado en tela de alta calidad y corte impecable."
+        description: "Campera sofisticada perfecto para ocasiones formales o para darle un toque elegante a tu look casual. Confeccionado en tela de alta calidad y corte impecable."
     },
     {
         id: 4,
         name: "Camisa Básica Hombre",
-        price: 3490,
+        price: 34,
         category: "hombre",
         image: "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Camisa básica de algodón 100%, perfecta para el día a día. Corte clásico que combina con cualquier pantalón. Disponible en varios colores."
     },
     {
         id: 5,
-        name: "Bolso de Cuero",
-        price: 7590,
+        name: "Mochila",
+        price: 75,
         category: "accesorios",
         image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Bolso de cuero genuino con diseño moderno y funcional. Múltiples compartimentos para organizar tus pertenencias. Ideal para el día a día."
+        description: "Mochila genuino con diseño moderno y funcional. Múltiples compartimentos para organizar tus pertenencias. Ideal para el día a día."
     },
     {
         id: 6,
-        name: "Falda Plisada",
-        price: 4290,
+        name: "Jogging Plisadao",
+        price: 42,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Falda plisada de talle alto, perfecta para looks casuales y formales. Confeccionada en tela fluida que se adapta a tu movimiento."
+        description: "Jogging plisadao de talle alto, perfecta para looks casuales y formales. Confeccionada en tela fluida que se adapta a tu movimiento."
     },
     {
         id: 7,
-        name: "Sudadera con Capucha",
-        price: 5490,
+        name: "Buzo con Capucha",
+        price: 54,
         category: "hombre",
         image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Sudadera cómoda con capucha, ideal para días frescos. Con bolsillo tipo canguro y ajuste en puños y cintura. Disponible en varios colores."
+        description: "Buzo cómoda con capucha, ideal para días frescos. Con bolsillo tipo canguro y ajuste en puños y cintura. Disponible en varios colores."
     },
     {
         id: 8,
         name: "Gafas de Sol",
-        price: 3290,
+        price: 32,
         category: "accesorios",
         image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Gafas de sol con protección UV400. Diseño moderno y elegante que se adapta a cualquier tipo de rostro. Incluye estuche protector."
     },
     {
         id: 9,
-        name: "Top de Encaje",
-        price: 2890,
+        name: "Camisa Delicada",
+        price: 28,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Top de encaje delicado, perfecto para combinar con jeans o faldas. Corte favorecedor y tela suave al tacto. Disponible en varios colores."
+        description: "Camisa delicada, perfecto para combinar con jeans o faldas. Corte favorecedor y tela suave al tacto. Disponible en varios colores."
     },
     {
         id: 10,
         name: "Zapatillas Urbanas",
-        price: 8990,
+        price: 89,
         category: "hombre",
         image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Zapatillas urbanas con diseño moderno y suela cómoda. Ideales para el día a día, combinando estilo y confort. Disponible en varios colores."
     },
     {
         id: 11,
-        name: "Collar Elegante",
-        price: 1890,
+        name: "Anillo Elegante",
+        price: 18,
         category: "accesorios",
         image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Collar elegante con detalle minimalista. Perfecto para complementar cualquier outfit, ya sea casual o formal. Ajustable a diferentes largos."
+        description: "Anillo elegante con detalle minimalista. Perfecto para complementar cualquier outfit, ya sea casual o formal. Ajustable a diferentes largos."
     },
     {
         id: 12,
         name: "Chaqueta de Cuero",
-        price: 12990,
+        price: 129,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Chaqueta de cuero sintético de alta calidad. Diseño atemporal que nunca pasa de moda. Perfecta para looks casuales y de noche."
@@ -99,7 +99,7 @@ const products = [
     {
         id: 13,
         name: "Pantalón Chino",
-        price: 4990,
+        price: 49,
         category: "hombre",
         image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Pantalón chino de corte moderno, ideal para looks casuales y semi-formales. Confeccionado en tela resistente y cómoda. Disponible en varios colores."
@@ -107,18 +107,18 @@ const products = [
     {
         id: 14,
         name: "Reloj de Pulsera",
-        price: 6590,
+        price: 659,
         category: "accesorios",
         image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         description: "Reloj de pulsera con diseño elegante y correa de cuero genuino. Resistente al agua y con garantía de 2 años. Ideal para regalo."
     },
     {
         id: 15,
-        name: "Conjunto Deportivo",
-        price: 7890,
+        name: "Conjunto De Jean",
+        price: 78,
         category: "mujer",
         image: "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        description: "Conjunto deportivo de dos piezas, perfecto para entrenar o looks casuales. Tela transpirable y de secado rápido. Disponible en varios colores."
+        description: "Conjunto de jean de dos piezas, perfecto para looks casuales. Tela transpirable y de secado rápido. Disponible en varios colores."
     }
 ];
 
@@ -391,6 +391,7 @@ function updateCartUI() {
     
     if (cart.length === 0) {
         cartItems.innerHTML = '<div class="empty-cart">Tu carrito está vacío</div>';
+        cartTotal.textContent = 'Total: $0'; // Asegurar que el total sea $0 cuando está vacío
     } else {
         let total = 0;
         
