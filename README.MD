@@ -66,6 +66,14 @@ Fue diseñado con un enfoque profesional y adaptable para **desktop y dispositiv
 Proyecto desarrollado por **Thomas Ramírez**, Desarrollador Web Frontend especializado en **Landing Pages Profesionales, SEO y Marketing Digital.**  
 Creado como ejemplo demostrativo para su portafolio y para mostrar sus capacidades técnicas y de diseño.
 
+## Redes sociales: 
+[LinkedIn](https://www.linkedin.com/in/thomas-alan-ramirez/) | [Fiverr](https://es.fiverr.com/aramirezthomas?public_mode=true) | [Facebook](https://www.facebook.com/profile.php?id=61575025664166) | [Reddit](https://www.reddit.com/user/Late-Put-9295/)
+
+## 🤝 Disponible para contratación
+¿Querés una página igual de profesional para tu estudio o servicio?  
+Podés obtener una **landing page como esta en mi perfil de Fiverr por solo $10 USD**.  
+👉 [Visitar mi Fiverr](https://es.fiverr.com/s/1qv4kdp)
+
 ## ⚠️ Aviso Legal
 
 > Este sitio web es un **proyecto ficticio** sin fines comerciales.  
