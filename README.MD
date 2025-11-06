@@ -32,16 +32,16 @@ Fue diseñado con un enfoque profesional y adaptable para **desktop y dispositiv
 ## 📂 Estructura del proyecto
 ### │── index.html
 ### │── assets
-###      │── facebook-logo.png
-###      │── fiverr-logo.png
-###      │── git-hub-logo.png
-###      │── linkedin-logo.jpg
-###      │── logo.png
-###      └── reddit-logo.png
+####      │── facebook-logo.png
+####      │── fiverr-logo.png
+####      │── git-hub-logo.png
+####      │── linkedin-logo.jpg
+####      │── logo.png
+####      └── reddit-logo.png
 ### │── css
-###      └── styles.css
+####      └── styles.css
 ### │── js
-###      └── script.js
+####      └── script.js
 ### │── preview.png
 ### └── README.md
 
